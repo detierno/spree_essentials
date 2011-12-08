@@ -39,8 +39,5 @@ module SpreeEssentials
     config.to_prepare &method(:activate).to_proc    
   end
   
-  class CustomHooks < Spree::ThemeSupport::HookListener
-    insert_after :admin_tabs, 'admin/shared/contents_tab'
-  end
   
 end
